@@ -23,6 +23,9 @@
                 <a href="contacto.html">
                     <li>Contacto</li>
                 </a>
+                <a href="https://www.google.com.ar/" target="_blank">
+                    <li>Google</li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -30,15 +33,36 @@
     <main>
         <!-- Main se encarga de Alojar la Informacion y el Contenido -->
         <h1>Contacto</h1>
-
-
-       
+        <div class="contenedor">
+            <form action="" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" value="" id="nombre" name="nombre" />
+                <label for="apellido">Apellido:</label>
+                <input type="text" value="" id="apellido" name="apellido" />
+                <label for="dni">DNI:</label>
+                <input type="number" value="" id="dni" name="dni" min="100000" max="99999999" />
+                <label for="email">Email:</label>
+                <input type="email" value="" id="email" name="email" />
+                <label for="pais">Pais de Origen:</label>
+                <select name="pais" id="pais">
+                    <option value="Arg">Argentina</option>
+                    <option value="Br">Brasil</option>
+                    <option value="Cl">Chile</option>
+                    <option value="Ur">Uruguay</option>
+                </select>
+                <!-- <label for="pais">Esta vivo?:</label>
+                <input type="checkbox" name="si" id="si"> -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+                <button type="button">Enviar</button>
+                <!-- <input type="button" value="Enviar"> -->
+            </form>
+        </div>
     </main>
 
-    <footer>
+    <footer class="footer">
         <!-- Footer se encarga de Navegacion e Informacion -->
-        <p>Sitio de Matias | Copyright 2024 </p>
-
+        <p class="roboto">Sitio de Matias | Copyright 2024 </p>
     </footer>
 </body>
 

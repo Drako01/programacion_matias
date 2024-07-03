@@ -1,4 +1,3 @@
-
 /*selector {
     propiedad1: valor;
     propiedad2: valor;
@@ -12,57 +11,134 @@
 */
 
 /* Formateo */
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{ 
+header {
     background-color: rgb(112, 168, 217);
 }
 
-h1{
+h1 {
     font-size: 40px;
     text-align: center;
 }
 
 /* Modificando los li */
 /* Segun su Ruta completa, que afecta solo a los li seleccionados */
-header nav ul a li{
+header nav ul a li {
     color: white;
 }
 
 /* En general */
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /* Clases - Comienzan con un . */
-.color_azul{
+.color_azul {
     color: blue;
 }
 
-.lighter{
+.lighter {
     font-weight: lighter;
 }
 
-.roboto{
+.roboto {
     font-family: "Roboto";
 }
 
-
-/* Selector ID - Comianzan con un #*/
-
-#footer_id{
+.footer {
     background-color: rgb(68, 39, 2);
     height: 100px;
     text-align: center;
     color: white;
     font-size: 32px;
+}
+
+/* Selector ID - Comianzan con un #*/
+
+#fernet_id {
+    height: 400px;
+    margin: 32px;
+}
+
+
+/* Clase 03 - Tablas */
+
+table{
+    border: 1px solid #000000;
+    margin: 32px 100px;
+}
+thead{
+    background-color: #d8d8d8;
+}
+tbody{
+    background-color: #f4f4a1;
+}
+
+td,
+th{
+    border: 1px solid #000000;
+    padding: 5px 20px 3px 15px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* Fomularios */
+.contenedor{
+    border: 1px solid #000000;
+    max-width: 700px;
+    background-color: #d8d8d8;
+    border-radius: 20px;
+    margin: 100px;
+    padding: 20px;
+    box-shadow: 3px 3px 15px #555555;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 0;
+    gap: 5px;
+}
+
+/* Rutas relativas a un Elemento */
+.formulario label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulario select,
+.formulario input {
+    height: 24px;
+}
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario button {
+    margin-top: 20px;
+    height: 32px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffe4c4;
+    box-shadow: 3px 3px 15px #555555;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.formulario button:hover{
+    background-color: #a75d03;
+    box-shadow: none;
+    color: #d8d8d8;
 }
